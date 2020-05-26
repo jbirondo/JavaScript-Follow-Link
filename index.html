@@ -32,8 +32,8 @@
     document.body.append(highlight)
 
     function highlightLink(e) {
-      console.log(e)
-      console.log('Highlight')
+      const linkCoords = this.getBoundingClientRect()
+      console.log(linkCoords)
     }
 
     triggers.forEach(ele => ele.addEventListener('mouseenter', highlightLink))
